@@ -488,7 +488,7 @@ if [ $WANTS_CONFIG -eq $TRUE ] ; then
         TRACY_PROFILER="-DUSE_TRACY:BOOL=ON"
     else
         TRACY_PROFILER="-DUSE_TRACY:BOOL=OFF"
-    fi
+    fi   
     if [ $WANTS_TESTBUILD -eq $TRUE ] ; then
         TESTBUILD="-DTESTBUILD:BOOL=ON -DTESTBUILDPERIOD:STRING=$TESTBUILD_PERIOD"
     else

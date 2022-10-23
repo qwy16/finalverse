@@ -8,8 +8,8 @@ cmake_minimum_required(VERSION 3.12.0 FATAL_ERROR)
 
 set(CMAKE_CXX_STANDARD 17) #<FS> Enable c++17 on all platforms
 
-set(ROOT_PROJECT_NAME "Firestorm" CACHE STRING
-    "The root project/makefile/solution name. Defaults to Firestorm.")
+set(ROOT_PROJECT_NAME "Finalverse" CACHE STRING
+    "The root project/makefile/solution name. Defaults to Finalverse.")
 project(${ROOT_PROJECT_NAME})
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
@@ -156,7 +156,7 @@ endif (WINDOWS)
 # sets the 'startup project' for debugging from visual studio.
 set_property(
     DIRECTORY ${VIEWER_PREFIX}
-    PROPERTY VS_STARTUP_PROJECT firestorm-bin
+    PROPERTY VS_STARTUP_PROJECT finalverse-bin
     )
 
 if (USE_BUGSPLAT)
@@ -170,10 +170,10 @@ else (USE_BUGSPLAT)
 endif (USE_BUGSPLAT)
 
 add_subdirectory(${VIEWER_PREFIX}newview)
-add_dependencies(viewer firestorm-bin)
+add_dependencies(viewer finalverse-bin)
 
 set_target_properties(
-    firestorm-bin PROPERTIES
+        finalverse-bin PROPERTIES
     VS_DEBUGGER_WORKING_DIRECTORY "..\\..\\indra\\newview")
 
 add_subdirectory(${VIEWER_PREFIX}doxygen EXCLUDE_FROM_ALL)
