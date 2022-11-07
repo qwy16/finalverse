@@ -1767,7 +1767,7 @@ if (DARWIN)
 
     # Add resource files to the project.
     set(viewer_RESOURCE_FILES
-            firestorm_icon.icns
+            finalverse_icon.icns
             macview.r
             Info-Firestorm.plist
             Firestorm.xib/
@@ -2669,14 +2669,14 @@ if (DARWIN)
     set(product "Finalverse")
     set(MACOSX_EXECUTABLE_NAME "Finalverse")
     set(MACOSX_BUNDLE_INFO_STRING "Finalverse Viewer")
-    set(MACOSX_BUNDLE_ICON_FILE "firestorm_icon.icns")
-    set(MACOSX_BUNDLE_GUI_IDENTIFIER "org.firestormviewer.firestorm")
+    set(MACOSX_BUNDLE_ICON_FILE "finalverse_icon.icns")
+    set(MACOSX_BUNDLE_GUI_IDENTIFIER "com.finalverse.viewer")
     set(MACOSX_BUNDLE_LONG_VERSION_STRING "${VIEWER_CHANNEL} ${VIEWER_SHORT_VERSION}.${VIEWER_VERSION_REVISION}")
     set(MACOSX_BUNDLE_BUNDLE_NAME "Finalverse")
     set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${VIEWER_SHORT_VERSION}.${VIEWER_VERSION_REVISION}")
     set(MACOSX_BUNDLE_BUNDLE_VERSION "${VIEWER_SHORT_VERSION}${VIEWER_MACOSX_PHASE}${VIEWER_REVISION}")
-    set(MACOSX_BUNDLE_COPYRIGHT "Copyright 2010-2022 The Phoenix Firestorm Project, Inc.")
-    set(MACOSX_BUNDLE_NSMAIN_NIB_FILE "Firestorm.nib")
+    set(MACOSX_BUNDLE_COPYRIGHT "Copyright 2022 Finalverse Inc.")
+    set(MACOSX_BUNDLE_NSMAIN_NIB_FILE "Finalverse.nib")
     set(MACOSX_BUNDLE_NSPRINCIPAL_CLASS "LLApplication")
 
     # https://blog.kitware.com/upcoming-in-cmake-2-8-12-osx-rpath-support/
